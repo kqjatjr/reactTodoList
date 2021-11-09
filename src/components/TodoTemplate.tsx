@@ -1,11 +1,7 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import "../CSS/TodoTemplate.scss";
 
-type props = {
-  children: JSX.Element[];
-};
-
-const TodoTemplate = ({ children }: props) => {
+const TodoTemplate = ({ children }: PropsWithChildren<{}>) => {
   return (
     <div className="TodoTemplate">
       <div className="app-title">일정 관리</div>
